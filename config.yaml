@@ -1,0 +1,15 @@
+app:
+  title: "local RAG SYSTEM "
+
+llm:
+  model: "llama3.2"       # Make sure you have this model pulled
+  embedding_model: "nomic-embed-text"
+
+paths:
+  data: "./data"
+  chroma_db: "./db/chroma_store"
+  history_db: "sqlite:///./db/history.db"
+
+processing:
+  chunk_size: 1000      # Default character count per chunk
+  chunk_overlap: 200    # Default overlap between chunks
